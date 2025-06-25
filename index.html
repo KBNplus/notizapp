@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <title>NotizApp</title>
+</head>
+<body>
+    <div id="splash" class="splash">
+        <h1>NotizApp <span id="version"></span></h1>
+    </div>
+    <div id="app" class="hidden">
+        <h1>Notizen</h1>
+        <form id="note-form">
+            <input type="text" id="note-input" placeholder="Neue Notiz" required>
+            <button type="submit">Hinzufügen</button>
+        </form>
+        <ul id="note-list"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
